@@ -48,7 +48,7 @@
         <form action="editar.php" method="POST" class="pagina-edicao__formulario pagina__formulario form">
             <fieldset>
 
-                <label for="alunos-matricula" class="form__label">Matricula:</label>
+                <label for="alunos-matricula" class="form__label">Matrícula:</label>
                 <input type="text" name="alunos-matricula" id="alunos-matricula" class="pagina-aluno__input form__input" placeholder="Insira a matricula do aluno..." value=<?php echo $matricula; ?> required>
 
                 <label for="alunos-nota" class="form__label">Nota:</label>

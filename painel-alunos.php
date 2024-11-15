@@ -4,7 +4,7 @@ include_once('conexao.php');
 $sql = "SELECT * FROM alunos ORDER BY id DESC";
 $result = $connection->query($sql);
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['alunos-nome']) && isset($_POST['alunos-turma']) && isset($_POST['alunos-matricula']) && isset($_POST['alunos-nota'])) {
+if (isset($_POST['alunos-nome']) && isset($_POST['alunos-turma']) && isset($_POST['alunos-matricula']) && isset($_POST['alunos-nota'])) {
     $nome = $_POST['alunos-nome'];
     $turma = $_POST['alunos-turma'];
     $matricula = $_POST['alunos-matricula'];
@@ -14,9 +14,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['alunos-nome']) && iss
 
     if ($insertResult) {
         header('Location: painel-alunos.php');
-        exit();
-    } else {
-        echo "Erro ao cadastrar o aluno";
     }
 }
 ?>
@@ -49,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['alunos-nome']) && iss
         <form action="painel-alunos.php" method="POST" class="pagina__formulario form">
             <fieldset>
 
-                <label for="alunos-matricula" class="form__label">Matricula:</label>
+                <label for="alunos-matricula" class="form__label">Matrícula:</label>
                 <input type="text" name="alunos-matricula" id="alunos-matricula" class="pagina-aluno__input form__input" placeholder="Insira a matricula do aluno..." required>
 
                 <label for="alunos-nota" class="form__label">Nota:</label>
