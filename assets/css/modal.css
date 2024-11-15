@@ -1,0 +1,56 @@
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.modal {
+    box-sizing: border-box;
+    width: 50%;
+    background-color: #DADADA;
+    border-radius: 10px;
+    width: 50vw;
+    padding: 2em;
+    flex-direction: column;
+    border: solid 1px #AAAAAA;
+    z-index: 1001; 
+}
+
+.modal__conteudo > div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.modal__fechar {
+    cursor: pointer;
+    font-size: 2em;
+    display: flex;
+}
+
+.modal__titulo {
+    font-size: 2em;
+    color: #03232E;
+    font-weight: 600;
+    border-bottom: solid 1px #ED801B;
+}
+
+.modal__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.modal__detalhe {
+    color: #03232E;
+    font-weight: 600;
+}
+
+.modal__detalhe > span {
+    font-weight: 400;
+}

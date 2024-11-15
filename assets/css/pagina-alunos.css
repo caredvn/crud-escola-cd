@@ -1,0 +1,64 @@
+/* .pagina-alunos__link {
+    display: flex;
+    flex-direction: row-reverse;
+} */
+
+.pagina-alunos__tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead > tr {
+    display: table-row;
+    background-color: #DADADA;
+}
+
+thead > tr > th {
+    text-align: left;
+    padding: 10px;
+    width: 30%;
+    font-weight: 600;
+}
+
+tbody > tr > td {
+    padding: 12px;
+    border-bottom: 1px solid #BABABA;
+    vertical-align: middle;
+}
+
+.pagina-alunos__acoes {
+    display: flex;
+}
+
+.acoes__botao {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all ease-in 100ms;
+    padding: 10px;
+}
+
+.acoes__botao:hover {
+    background-color: #DADADA;
+    border-radius: 20px;
+}
+
+.acoes__botao--editar::before {
+    background: url(../img/editar.png);
+}
+
+.acoes__botao--deletar::before {
+    background: url(../img/excluir.png);
+}
+
+.acoes__botao--visualizar::before {
+    background: url(../img/visualizar.png);
+}
+
+.acoes__botao--editar::before, .acoes__botao--deletar::before, .acoes__botao--visualizar::before {
+    content: '';
+    background-size: contain;
+    display: block;
+    width: 20px;
+    height: 20px;
+}

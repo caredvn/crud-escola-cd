@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url(cabecalho.css);
+@import url(formulario.css);
+@import url(pagina.css);
+@import url(pagina-login.css);
+@import url(pagina-cadastro.css);
+@import url(pagina-alunos.css);
+@import url(modal.css);
+@import url(rodape.css);
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    color: #03232E;
+    background-color: #F5F1F0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    height: 100vh;
+}

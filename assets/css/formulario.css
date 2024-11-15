@@ -1,0 +1,90 @@
+.form {
+    display: flex;
+    gap: 1.5em;
+    flex-direction: row-reverse;
+}
+
+.pagina__formulario {
+    justify-content: space-around;
+}
+
+.form > fieldset {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.pagina__formulario > fieldset {
+    width: 30%;
+}
+
+.login__formulario, .cadastro__formulario {
+    background-color: #DADADA;
+    border-radius: 10px;
+    width: 50vw;
+    padding: 2em;
+    flex-direction: column;
+    border: solid 1px #AAAAAA;
+}
+
+
+.form__label {
+    font-weight: 600;
+}
+
+.form__input {
+    height: 2em;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    outline: none;
+}
+
+.login__input, .cadastro__input {
+    width: 80%;
+}
+
+.pagina-aluno__input {
+    width: 100%;
+}
+
+.form__input::placeholder {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+}
+
+.form__botao {
+    cursor: pointer;
+    padding: .5em 1.5em;
+    background-color: #ED801B;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: inherit;
+    transition: all ease-in-out 300ms;
+}
+
+.form__botao:hover {
+    background-color: #03232E;
+}
+
+.cadastro__link {
+    color: #ED801B;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all ease-in-out 300ms;
+}
+
+.cadastro__link:hover {
+    color: #03232E;
+    letter-spacing: 1px;
+}
+
+.modal__formulario > fieldset {
+    width: 100%;
+}
+
+.modal__label {
+    color: #03232E;
+}

@@ -1,0 +1,10 @@
+.pagina-cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}

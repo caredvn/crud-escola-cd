@@ -1,0 +1,34 @@
+.pagina {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0 2em;
+}
+
+.pagina__link {
+    color: #ED801B;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all ease-in-out 300ms;
+}
+
+.pagina__link:hover {
+    color: #03232E;
+    letter-spacing: 1px;
+}
+
+.pagina__titulo {
+    font-size: 1.5em;
+    display: flex;
+    position: relative;
+}
+
+.pagina__titulo::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -10px;
+    width: 5px;
+    height: 1em;
+    background-color: #ED801B;
+}

@@ -1,0 +1,10 @@
+.pagina-login {
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
